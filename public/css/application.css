@@ -1,10 +1,87 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+body{
+  background-color: #d4d4d4;
+  font-family: 'Open Sans', sans-serif;
+}
+#block_screen{
+  display: none;
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  margin-top:-10%;
+  background-color: rgba(0,0,0,0.8);
+}
+#login_modal{
+  display: none;
+  position:fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -10%;
+  margin-left: -10%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px white;
+  width: 200px;
+  height: 100px;
+}
+#login_modal form input{
+  margin-bottom: 10px;
+}
+#signup_modal{
+  display: none;
+  position:fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -10%;
+  margin-left: -10%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px white;
+  width: 200px;
+  height: 100px;
+}
+#signup_modal form input{
+  margin-bottom: 10px;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 0 2px black;
+}
+nav h3 a{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav a:nth-child(2){
+  padding: 0 .5em;
+  position: absolute;
+  right:75px;
+  top: 0;
+  text-decoration: none;
+  color: black;
 }
 
-th {
-  text-align: left;
+.container{
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  padding: .5em;
+  text-align: center;
+  width: 50%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left:25%;
 }
+
+#container h3{
+  color: #555;
+}
+
+
