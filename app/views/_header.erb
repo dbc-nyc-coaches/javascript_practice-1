@@ -1,8 +1,8 @@
 <nav>
   <% unless session[:user_id] %>
   <h3><a href="/">JavaScript Rocks!</a></h3>
-  <a id="login" href="/login">Log In</a>
-  <a id="signup" href="/new">Sign Up</a>
+  <a id="login" class="user_authenticate" href="/login">Log In</a>
+  <a id="signup" class="user_authenticate" href="/new">Sign Up</a>
   <% else %>
   <h3><a href="/user/<%= session[:user_id] %>">JavaScript Rocks!</a></h3>
   <a id="logout" href="/user/logout">Log Out</a>
